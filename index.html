@@ -1,0 +1,391 @@
+<!-- Home Page -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Motors — Luxury Automotive</title>
+  <meta name="description" content="Experience the pinnacle of automotive luxury. Apex Motors offers an exclusive collection of premium and exotic vehicles." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark"><span>A</span></div>
+      <span class="nav__logo-text">APEX MOTORS</span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="pages/cars.html" class="nav__link">Inventory</a></li>
+      <li><a href="pages/about.html" class="nav__link">About</a></li>
+      <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+    </ul>
+
+    <a href="pages/contact.html" class="nav__cta">Enquire Now</a>
+
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile">
+  <a href="index.html" class="nav__link">Home</a>
+  <a href="pages/cars.html" class="nav__link">Inventory</a>
+  <a href="pages/about.html" class="nav__link">About</a>
+  <a href="pages/contact.html" class="nav__link">Contact</a>
+  <a href="pages/contact.html" class="btn btn--gold" style="margin-top:1rem">Enquire Now</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="hero__bg"></div>
+
+  <div class="hero__content container">
+    <div class="hero__label">
+      <span class="label"><span class="gold-line"></span>Est. 2004 · Luxury Collection</span>
+    </div>
+    <h1 class="display-xl hero__title">
+      DRIVEN<br>BY <em>Excellence</em>
+    </h1>
+    <p class="hero__sub">
+      Curated for those who demand more than transportation — 
+      a fleet of the world's most coveted automobiles awaits.
+    </p>
+    <div class="hero__actions">
+      <a href="pages/cars.html" class="btn btn--gold">
+        Explore Inventory
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="pages/about.html" class="btn btn--ghost">Our Story</a>
+    </div>
+  </div>
+
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <div class="hero__stat-num" data-count="350" data-suffix="+">0+</div>
+      <div class="hero__stat-label">Vehicles</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num" data-count="20" data-suffix="+">0+</div>
+      <div class="hero__stat-label">Brands</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num" data-count="8500" data-suffix="+">0+</div>
+      <div class="hero__stat-label">Happy Clients</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num" data-count="20">0</div>
+      <div class="hero__stat-label">Years Experience</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED CARS
+     ============================================================ -->
+<section class="section featured">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label"><span class="gold-line"></span>Curated Selection</span>
+      <h2 class="display-md">Featured Vehicles</h2>
+      <p class="body-sm">Handpicked by our specialists — each machine a masterpiece of engineering and desire.</p>
+    </div>
+
+    <div class="cars-grid">
+
+      <!-- Card 1 — Large Featured -->
+      <div class="car-card fade-in" data-href="pages/car-detail.html?id=1" style="cursor:pointer" onclick="window.location='pages/car-detail.html?id=1'">
+        <img class="car-card__img" src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1200&q=80" alt="Lamborghini Huracán" loading="lazy" />
+        <div class="car-card__overlay">
+          <div class="car-card__badge">Featured</div>
+          <div class="car-card__brand">Lamborghini</div>
+          <div class="car-card__name">Huracán EVO</div>
+          <div class="car-card__price">From $289,000</div>
+          <div class="car-card__meta">
+            <div class="car-card__meta-item"><strong>5.2L V10</strong>Engine</div>
+            <div class="car-card__meta-item"><strong>630 HP</strong>Power</div>
+            <div class="car-card__meta-item"><strong>2.9s</strong>0-60 mph</div>
+          </div>
+          <div class="car-card__cta">View Details</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="car-card fade-in" data-delay="1" onclick="window.location='pages/car-detail.html?id=2'" style="cursor:pointer">
+        <img class="car-card__img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Porsche 911" loading="lazy" />
+        <div class="car-card__overlay">
+          <div class="car-card__brand">Porsche</div>
+          <div class="car-card__name">911 GT3 RS</div>
+          <div class="car-card__price">From $225,250</div>
+          <div class="car-card__meta">
+            <div class="car-card__meta-item"><strong>4.0L</strong>Flat-6</div>
+            <div class="car-card__meta-item"><strong>518 HP</strong>Power</div>
+            <div class="car-card__meta-item"><strong>3.2s</strong>0-60 mph</div>
+          </div>
+          <div class="car-card__cta">View Details</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="car-card fade-in" data-delay="2" onclick="window.location='pages/car-detail.html?id=3'" style="cursor:pointer">
+        <img class="car-card__img" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80" alt="Ferrari Roma" loading="lazy" />
+        <div class="car-card__overlay">
+          <div class="car-card__brand">Ferrari</div>
+          <div class="car-card__name">Roma Spider</div>
+          <div class="car-card__price">From $272,000</div>
+          <div class="car-card__meta">
+            <div class="car-card__meta-item"><strong>3.9L</strong>Twin-Turbo V8</div>
+            <div class="car-card__meta-item"><strong>612 HP</strong>Power</div>
+            <div class="car-card__meta-item"><strong>3.4s</strong>0-60 mph</div>
+          </div>
+          <div class="car-card__cta">View Details</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="car-card fade-in" data-delay="3" onclick="window.location='pages/car-detail.html?id=4'" style="cursor:pointer">
+        <img class="car-card__img" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80" alt="BMW M8" loading="lazy" />
+        <div class="car-card__overlay">
+          <div class="car-card__brand">BMW</div>
+          <div class="car-card__name">M8 Competition</div>
+          <div class="car-card__price">From $138,000</div>
+          <div class="car-card__meta">
+            <div class="car-card__meta-item"><strong>4.4L V8</strong>Engine</div>
+            <div class="car-card__meta-item"><strong>617 HP</strong>Power</div>
+            <div class="car-card__meta-item"><strong>2.8s</strong>0-60 mph</div>
+          </div>
+          <div class="car-card__cta">View Details</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:3rem" class="fade-up">
+      <a href="pages/cars.html" class="btn btn--outline">
+        View Full Inventory
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BRAND LOGOS
+     ============================================================ -->
+<section class="brands">
+  <div class="section-header--center container fade-up" style="margin-bottom:3rem">
+    <span class="label"><span class="gold-line"></span>Our Partners</span>
+  </div>
+  <div class="brands__track">
+    <div class="brands__list" aria-hidden="true">
+      <div class="brand-item"><span>FERRARI</span></div>
+      <div class="brand-item"><span>LAMBORGHINI</span></div>
+      <div class="brand-item"><span>PORSCHE</span></div>
+      <div class="brand-item"><span>BENTLEY</span></div>
+      <div class="brand-item"><span>ROLLS-ROYCE</span></div>
+      <div class="brand-item"><span>MASERATI</span></div>
+      <div class="brand-item"><span>ASTON MARTIN</span></div>
+      <div class="brand-item"><span>McLAREN</span></div>
+      <div class="brand-item"><span>BMW</span></div>
+      <div class="brand-item"><span>MERCEDES-AMG</span></div>
+    </div>
+    <!-- Duplicate for seamless scroll -->
+    <div class="brands__list" aria-hidden="true">
+      <div class="brand-item"><span>FERRARI</span></div>
+      <div class="brand-item"><span>LAMBORGHINI</span></div>
+      <div class="brand-item"><span>PORSCHE</span></div>
+      <div class="brand-item"><span>BENTLEY</span></div>
+      <div class="brand-item"><span>ROLLS-ROYCE</span></div>
+      <div class="brand-item"><span>MASERATI</span></div>
+      <div class="brand-item"><span>ASTON MARTIN</span></div>
+      <div class="brand-item"><span>McLAREN</span></div>
+      <div class="brand-item"><span>BMW</span></div>
+      <div class="brand-item"><span>MERCEDES-AMG</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <span class="label"><span class="gold-line"></span>Client Stories</span>
+      <h2 class="display-md">What Our Clients Say</h2>
+    </div>
+
+    <div class="testimonials__grid">
+
+      <div class="testimonial-card fade-up">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testimonial-card__quote-mark">"</div>
+        <p class="testimonial-card__text">
+          The team at Apex Motors made acquiring my Ferrari F8 an absolute pleasure. 
+          Their knowledge, discretion, and white-glove service are unmatched anywhere in the world.
+        </p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="James Harrington" loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">James Harrington</div>
+            <div class="testimonial-card__role">CEO, Harrington Capital</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up" data-delay="1">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testimonial-card__quote-mark">"</div>
+        <p class="testimonial-card__text">
+          I've purchased three vehicles through Apex over the past five years. Each time, 
+          they exceed my expectations — truly a bespoke automotive experience.
+        </p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Sofia Marchetti" loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">Sofia Marchetti</div>
+            <div class="testimonial-card__role">Architect, Studio M Milan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up" data-delay="2">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testimonial-card__quote-mark">"</div>
+        <p class="testimonial-card__text">
+          From the test drive to delivery, every step felt effortless. The Rolls-Royce Cullinan 
+          they sourced for me was exactly what I envisioned — perfection personified.
+        </p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&q=80" alt="David Chen" loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">David Chen</div>
+            <div class="testimonial-card__role">Tech Entrepreneur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up" data-delay="3">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testimonial-card__quote-mark">"</div>
+        <p class="testimonial-card__text">
+          Impeccable inventory, transparent pricing, and a team that genuinely loves automobiles. 
+          Apex Motors is in a class of its own among luxury dealerships.
+        </p>
+        <div class="testimonial-card__author">
+          <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Amara Osei" loading="lazy" />
+          <div>
+            <div class="testimonial-card__name">Amara Osei</div>
+            <div class="testimonial-card__role">Film Director</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA SECTION
+     ============================================================ -->
+<section class="cta-section">
+  <div class="cta-section__bg"></div>
+  <div class="cta-section__content container fade-up">
+    <span class="label" style="margin-bottom:1rem;display:block"><span class="gold-line"></span>Begin Your Journey</span>
+    <h2 class="display-md" style="margin-bottom:1rem">Your Dream Car<br>Awaits Discovery</h2>
+    <p>Schedule a private viewing with one of our luxury automotive specialists and experience automotive excellence firsthand.</p>
+    <div class="cta-section__actions">
+      <a href="pages/cars.html" class="btn btn--gold">Browse Inventory</a>
+      <a href="pages/contact.html" class="btn btn--ghost">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="margin-bottom:0.5rem;display:inline-flex">
+          <div class="nav__logo-mark"><span>A</span></div>
+          <span class="nav__logo-text">APEX MOTORS</span>
+        </a>
+        <p>Purveyors of the world's finest automobiles since 2004. We connect discerning clients with vehicles that transcend transportation.</p>
+        <div class="footer__social" style="margin-top:1.5rem">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Inventory</h4>
+        <ul class="footer__links">
+          <li><a href="pages/cars.html">New Arrivals</a></li>
+          <li><a href="pages/cars.html">Sports Cars</a></li>
+          <li><a href="pages/cars.html">Luxury Sedans</a></li>
+          <li><a href="pages/cars.html">SUVs & Crossovers</a></li>
+          <li><a href="pages/cars.html">Electric Vehicles</a></li>
+          <li><a href="pages/cars.html">Classic Collection</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/about.html">Our Team</a></li>
+          <li><a href="pages/about.html">History</a></li>
+          <li><a href="pages/contact.html">Careers</a></li>
+          <li><a href="pages/contact.html">Press</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+15552684263">+1 (555) 268-4263</a></li>
+          <li><a href="mailto:hello@apexmotors.com">hello@apexmotors.com</a></li>
+          <li><a href="#">1 Apex Drive, Beverly Hills<br>CA 90210, USA</a></li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <span class="label" style="display:block;margin-bottom:0.5rem">Hours</span>
+          <p style="font-size:0.8rem;color:#8a8a8a;line-height:2">Mon–Fri: 9am – 7pm<br>Sat: 10am – 6pm<br>Sun: By Appointment</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Apex Motors. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!-- Car Details Page -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari 296 GTB — Apex Motors</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">
+      <div class="nav__logo-mark"><span>A</span></div>
+      <span class="nav__logo-text">APEX MOTORS</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link">Home</a></li>
+      <li><a href="cars.html" class="nav__link">Inventory</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <a href="../index.html" class="nav__link">Home</a>
+  <a href="cars.html" class="nav__link">Inventory</a>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+</div>
+
+<!-- BREADCRUMB -->
+<div style="background:var(--off-black);border-bottom:1px solid rgba(255,255,255,0.05);padding:0.8rem 0;margin-top:var(--nav-height)">
+  <div class="container" style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem;color:var(--silver)">
+    <a href="../index.html" style="color:var(--silver);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--silver)'">Home</a>
+    <span style="color:var(--steel)">/</span>
+    <a href="cars.html" style="color:var(--silver);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--silver)'">Inventory</a>
+    <span style="color:var(--steel)">/</span>
+    <span style="color:var(--platinum)">Ferrari 296 GTB</span>
+  </div>
+</div>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero">
+  <div class="detail-hero__inner">
+
+    <!-- Gallery -->
+    <div class="detail-gallery">
+      <img class="gallery-main" 
+        src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1400&q=85" 
+        alt="Ferrari 296 GTB" />
+      <div class="gallery-thumbs">
+        <img class="gallery-thumb active"
+          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=300&q=70"
+          data-full="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1400&q=85"
+          alt="Exterior front" />
+        <img class="gallery-thumb"
+          src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=300&q=70"
+          data-full="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=1400&q=85"
+          alt="Side profile" />
+        <img class="gallery-thumb"
+          src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=300&q=70"
+          data-full="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1400&q=85"
+          alt="Rear view" />
+        <img class="gallery-thumb"
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=300&q=70"
+          data-full="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=85"
+          alt="Interior" />
+        <img class="gallery-thumb"
+          src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=300&q=70"
+          data-full="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1400&q=85"
+          alt="Engine bay" />
+      </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="detail-info">
+      <div class="detail-info__brand">Ferrari · 2024</div>
+      <div class="detail-info__name">296 GTB</div>
+      <div class="detail-info__year">Rosso Corsa · 8-Speed DCT · 1,200 Miles</div>
+
+      <div class="detail-info__price-block">
+        <div class="detail-info__price-label">Asking Price</div>
+        <div class="detail-info__price">$312,000</div>
+        <div class="detail-info__availability">In Stock — Ready for Immediate Delivery</div>
+      </div>
+
+      <!-- Performance Specs -->
+      <h4>Performance</h4>
+      <div class="spec-grid">
+        <div class="spec-row">
+          <div class="spec-row__label">Engine</div>
+          <div class="spec-row__val">3.0L Twin-Turbo V6 + Electric</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Total Output</div>
+          <div class="spec-row__val">819 HP</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Torque</div>
+          <div class="spec-row__val">546 lb-ft</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">0–60 mph</div>
+          <div class="spec-row__val">2.9 seconds</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Top Speed</div>
+          <div class="spec-row__val">205 mph</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Transmission</div>
+          <div class="spec-row__val">8-Speed DCT</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Drive</div>
+          <div class="spec-row__val">Rear-Wheel Drive</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Curb Weight</div>
+          <div class="spec-row__val">3,527 lbs</div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <h4>Vehicle Details</h4>
+      <div class="spec-grid">
+        <div class="spec-row">
+          <div class="spec-row__label">Year</div>
+          <div class="spec-row__val">2024</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Mileage</div>
+          <div class="spec-row__val">1,200 miles</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Exterior</div>
+          <div class="spec-row__val">Rosso Corsa</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Interior</div>
+          <div class="spec-row__val">Nero Aniline Leather</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">VIN</div>
+          <div class="spec-row__val" style="font-size:0.7rem">ZFF95NLA5R0284301</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-row__label">Condition</div>
+          <div class="spec-row__val">Pristine</div>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <h4>Notable Options</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem">
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Carbon Fibre Pack</span>
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Racing Seats</span>
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Carbon Ceramic Brakes</span>
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Magneride Suspension</span>
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Forged Wheels</span>
+        <span style="font-size:0.7rem;padding:0.3rem 0.75rem;border:1px solid rgba(201,168,76,0.2);color:var(--platinum)">Apple CarPlay</span>
+      </div>
+
+      <div class="detail-actions">
+        <button class="btn btn--gold btn--test-drive">
+          Book a Test Drive
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn--outline">
+          Make an Enquiry
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="tel:+15552684263" class="btn btn--ghost">
+          Call: +1 (555) 268-4263
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.05);display:flex;flex-wrap:wrap;gap:1.5rem">
+        <div style="font-size:0.7rem;color:var(--silver);display:flex;align-items:center;gap:0.4rem">
+          <span style="color:var(--gold)">✓</span> Certified Pre-Owned
+        </div>
+        <div style="font-size:0.7rem;color:var(--silver);display:flex;align-items:center;gap:0.4rem">
+          <span style="color:var(--gold)">✓</span> Carfax Verified
+        </div>
+        <div style="font-size:0.7rem;color:var(--silver);display:flex;align-items:center;gap:0.4rem">
+          <span style="color:var(--gold)">✓</span> Nationwide Delivery
+        </div>
+        <div style="font-size:0.7rem;color:var(--silver);display:flex;align-items:center;gap:0.4rem">
+          <span style="color:var(--gold)">✓</span> 12-Month Warranty
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED CARS -->
+<section class="section" style="background:var(--off-black)">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label"><span class="gold-line"></span>You May Also Like</span>
+      <h2 class="display-sm">Similar Vehicles</h2>
+    </div>
+    <div class="inventory-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="inventory-card fade-up" onclick="window.location='car-detail.html'" style="cursor:pointer">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=700&q=80" alt="Lamborghini" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Lamborghini</div>
+          <div class="inventory-card__name">Huracán EVO</div>
+          <div class="inventory-card__year">2024 · Giallo Orion</div>
+          <div class="inventory-card__footer" style="margin-top:1rem">
+            <div class="inventory-card__price">$289,000</div>
+            <a href="car-detail.html" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="inventory-card fade-up" data-delay="1" onclick="window.location='car-detail.html'" style="cursor:pointer">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=700&q=80" alt="Ferrari Roma" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Ferrari</div>
+          <div class="inventory-card__name">Roma Spider</div>
+          <div class="inventory-card__year">2024 · Bianco Avus</div>
+          <div class="inventory-card__footer" style="margin-top:1rem">
+            <div class="inventory-card__price">$272,000</div>
+            <a href="car-detail.html" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="inventory-card fade-up" data-delay="2" onclick="window.location='car-detail.html'" style="cursor:pointer">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700&q=80" alt="Porsche 911" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Porsche</div>
+          <div class="inventory-card__name">911 GT3 RS</div>
+          <div class="inventory-card__year">2024 · Guards Red</div>
+          <div class="inventory-card__footer" style="margin-top:1rem">
+            <div class="inventory-card__price">$225,250</div>
+            <a href="car-detail.html" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo" style="display:inline-flex;margin-bottom:0.5rem">
+          <div class="nav__logo-mark"><span>A</span></div>
+          <span class="nav__logo-text">APEX MOTORS</span>
+        </a>
+        <p>Purveyors of the world's finest automobiles since 2004.</p>
+        <div class="footer__social" style="margin-top:1.5rem">
+          <a href="#">IG</a><a href="#">FB</a><a href="#">TW</a><a href="#">YT</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Inventory</h4>
+        <ul class="footer__links">
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+          <li><a href="cars.html">Luxury Sedans</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+15552684263">+1 (555) 268-4263</a></li>
+          <li><a href="mailto:hello@apexmotors.com">hello@apexmotors.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Apex Motors. All rights reserved.</p>
+      <div class="footer__legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

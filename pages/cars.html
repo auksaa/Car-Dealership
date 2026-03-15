@@ -1,0 +1,396 @@
+<!-- Car Page -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory — Apex Motors</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">
+      <div class="nav__logo-mark"><span>A</span></div>
+      <span class="nav__logo-text">APEX MOTORS</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link">Home</a></li>
+      <li><a href="cars.html" class="nav__link">Inventory</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <a href="../index.html" class="nav__link">Home</a>
+  <a href="cars.html" class="nav__link">Inventory</a>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+  <a href="contact.html" class="btn btn--gold" style="margin-top:1rem">Enquire Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__content container">
+    <span class="label"><span class="gold-line"></span>Our Collection</span>
+    <h1 class="display-lg" style="color:var(--white);margin-top:0.5rem">Full Inventory</h1>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-bar__inner container">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ferrari">Ferrari</button>
+    <button class="filter-btn" data-filter="lamborghini">Lamborghini</button>
+    <button class="filter-btn" data-filter="porsche">Porsche</button>
+    <button class="filter-btn" data-filter="bmw">BMW</button>
+    <button class="filter-btn" data-filter="mercedes">Mercedes-AMG</button>
+    <button class="filter-btn" data-filter="bentley">Bentley</button>
+
+    <span class="filter-label filter-count" style="margin-left:auto">12 Vehicles</span>
+    <select class="filter-select">
+      <option value="default">Sort: Default</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name">Name: A–Z</option>
+    </select>
+  </div>
+</div>
+
+<!-- INVENTORY -->
+<section class="section inventory">
+  <div class="container">
+    <div class="inventory-grid">
+
+      <!-- Ferrari 1 -->
+      <div class="inventory-card fade-up" data-brand="ferrari" data-price="312000" data-name="Ferrari 296 GTB" data-href="car-detail.html?id=1">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=700&q=80" alt="Ferrari 296 GTB" loading="lazy" />
+          <div class="inventory-card__tag">New Arrival</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Ferrari</div>
+          <div class="inventory-card__name">296 GTB</div>
+          <div class="inventory-card__year">2024 · Rosso Corsa · 8-Speed DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">819</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">2.9s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">205</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$312,000</div>
+            <a href="car-detail.html?id=1" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lamborghini 1 -->
+      <div class="inventory-card fade-up" data-delay="1" data-brand="lamborghini" data-price="289000" data-name="Lamborghini Huracán EVO" data-href="car-detail.html?id=2">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=700&q=80" alt="Lamborghini Huracán" loading="lazy" />
+          <div class="inventory-card__tag">Featured</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Lamborghini</div>
+          <div class="inventory-card__name">Huracán EVO</div>
+          <div class="inventory-card__year">2024 · Giallo Orion · 7-Speed LDF</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">630</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">2.9s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">202</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$289,000</div>
+            <a href="car-detail.html?id=2" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Porsche 1 -->
+      <div class="inventory-card fade-up" data-delay="2" data-brand="porsche" data-price="225250" data-name="Porsche 911 GT3 RS" data-href="car-detail.html?id=3">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700&q=80" alt="Porsche 911 GT3 RS" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Porsche</div>
+          <div class="inventory-card__name">911 GT3 RS</div>
+          <div class="inventory-card__year">2024 · Guards Red · PDK</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">518</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">3.2s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">184</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$225,250</div>
+            <a href="car-detail.html?id=3" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BMW -->
+      <div class="inventory-card fade-up" data-brand="bmw" data-price="138000" data-name="BMW M8 Competition" data-href="car-detail.html?id=4">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=700&q=80" alt="BMW M8 Competition" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">BMW</div>
+          <div class="inventory-card__name">M8 Competition</div>
+          <div class="inventory-card__year">2024 · Frozen Marina Bay Blue · M-DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">617</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">2.8s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">190</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$138,000</div>
+            <a href="car-detail.html?id=4" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mercedes -->
+      <div class="inventory-card fade-up" data-delay="1" data-brand="mercedes" data-price="175000" data-name="Mercedes-AMG GT Black Series" data-href="car-detail.html?id=5">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=80" alt="Mercedes-AMG GT" loading="lazy" />
+          <div class="inventory-card__tag">Rare Find</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Mercedes-AMG</div>
+          <div class="inventory-card__name">GT Black Series</div>
+          <div class="inventory-card__year">2023 · Obsidian Black · AMG Speedshift DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">720</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">3.2s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">202</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$175,000</div>
+            <a href="car-detail.html?id=5" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bentley -->
+      <div class="inventory-card fade-up" data-delay="2" data-brand="bentley" data-price="235000" data-name="Bentley Continental GT Speed" data-href="car-detail.html?id=6">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1490902931801-d6f80ca94fe4?w=700&q=80" alt="Bentley Continental GT" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Bentley</div>
+          <div class="inventory-card__name">Continental GT Speed</div>
+          <div class="inventory-card__year">2024 · Midnight Emerald · 8-Speed DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">659</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">3.5s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">208</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$235,000</div>
+            <a href="car-detail.html?id=6" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ferrari 2 -->
+      <div class="inventory-card fade-up" data-brand="ferrari" data-price="272000" data-name="Ferrari Roma Spider" data-href="car-detail.html?id=7">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=700&q=80" alt="Ferrari Roma" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Ferrari</div>
+          <div class="inventory-card__name">Roma Spider</div>
+          <div class="inventory-card__year">2024 · Bianco Avus · 8-Speed DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">612</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">3.4s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">198</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$272,000</div>
+            <a href="car-detail.html?id=7" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lamborghini 2 -->
+      <div class="inventory-card fade-up" data-delay="1" data-brand="lamborghini" data-price="529000" data-name="Lamborghini Urus Performante" data-href="car-detail.html?id=8">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=700&q=80" alt="Lamborghini Urus" loading="lazy" />
+          <div class="inventory-card__tag">Sold Out Soon</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Lamborghini</div>
+          <div class="inventory-card__name">Urus Performante</div>
+          <div class="inventory-card__year">2024 · Blu Astraeus · 8-Speed Automatic</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">657</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">3.3s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">193</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$529,000</div>
+            <a href="car-detail.html?id=8" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Porsche 2 -->
+      <div class="inventory-card fade-up" data-delay="2" data-brand="porsche" data-price="185000" data-name="Porsche Taycan Turbo S" data-href="car-detail.html?id=9">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1632245889029-e406faaa34cd?w=700&q=80" alt="Porsche Taycan" loading="lazy" />
+          <div class="inventory-card__tag">Electric</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Porsche</div>
+          <div class="inventory-card__name">Taycan Turbo S</div>
+          <div class="inventory-card__year">2024 · Frozen Berry · 2-Speed PDK</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">750</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">2.4s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">162</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$185,000</div>
+            <a href="car-detail.html?id=9" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BMW 2 -->
+      <div class="inventory-card fade-up" data-brand="bmw" data-price="117000" data-name="BMW M5 CS" data-href="car-detail.html?id=10">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=700&q=80" alt="BMW M5 CS" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">BMW</div>
+          <div class="inventory-card__name">M5 CS</div>
+          <div class="inventory-card__year">2023 · Frozen Brands Hatch Grey · 8-Speed M DCT</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">627</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">2.9s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">190</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$117,000</div>
+            <a href="car-detail.html?id=10" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bentley 2 -->
+      <div class="inventory-card fade-up" data-delay="1" data-brand="bentley" data-price="330000" data-name="Bentley Bentayga EWB" data-href="car-detail.html?id=11">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=700&q=80" alt="Bentley Bentayga" loading="lazy" />
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Bentley</div>
+          <div class="inventory-card__name">Bentayga EWB</div>
+          <div class="inventory-card__year">2024 · Pale Brodgar · 8-Speed Automatic</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">542</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">4.4s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">180</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$330,000</div>
+            <a href="car-detail.html?id=11" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mercedes 2 -->
+      <div class="inventory-card fade-up" data-delay="2" data-brand="mercedes" data-price="157000" data-name="Mercedes-AMG G63" data-href="car-detail.html?id=12">
+        <div class="inventory-card__img-wrap">
+          <img class="inventory-card__img" src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=700&q=80" alt="Mercedes-AMG G63" loading="lazy" />
+          <div class="inventory-card__tag">In Stock</div>
+        </div>
+        <div class="inventory-card__body">
+          <div class="inventory-card__brand">Mercedes-AMG</div>
+          <div class="inventory-card__name">G 63 AMG</div>
+          <div class="inventory-card__year">2024 · Designo Night Black · AMG 9-Speed</div>
+          <div class="inventory-card__specs">
+            <div class="spec-item"><div class="spec-item__val">577</div><div class="spec-item__label">HP</div></div>
+            <div class="spec-item"><div class="spec-item__val">4.5s</div><div class="spec-item__label">0-60</div></div>
+            <div class="spec-item"><div class="spec-item__val">137</div><div class="spec-item__label">Top MPH</div></div>
+          </div>
+          <div class="inventory-card__footer">
+            <div class="inventory-card__price">$157,000</div>
+            <a href="car-detail.html?id=12" class="btn btn--outline" style="padding:0.5rem 1rem;font-size:0.65rem">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-section__bg" style="background:linear-gradient(rgba(8,8,8,0.88),rgba(8,8,8,0.88)),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1800&q=80') center/cover"></div>
+  <div class="cta-section__content container fade-up">
+    <span class="label" style="display:block;margin-bottom:1rem"><span class="gold-line"></span>Can't Find It?</span>
+    <h2 class="display-md">We'll Source It For You</h2>
+    <p>Looking for a specific model, colour, or specification? Our procurement specialists can locate virtually any vehicle worldwide.</p>
+    <div class="cta-section__actions">
+      <a href="contact.html" class="btn btn--gold">Contact a Specialist</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo" style="display:inline-flex;margin-bottom:0.5rem">
+          <div class="nav__logo-mark"><span>A</span></div>
+          <span class="nav__logo-text">APEX MOTORS</span>
+        </a>
+        <p>Purveyors of the world's finest automobiles since 2004.</p>
+        <div class="footer__social" style="margin-top:1.5rem">
+          <a href="#">IG</a><a href="#">FB</a><a href="#">TW</a><a href="#">YT</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Inventory</h4>
+        <ul class="footer__links">
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+          <li><a href="cars.html">Luxury Sedans</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+15552684263">+1 (555) 268-4263</a></li>
+          <li><a href="mailto:hello@apexmotors.com">hello@apexmotors.com</a></li>
+          <li>1 Apex Drive, Beverly Hills, CA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Apex Motors. All rights reserved.</p>
+      <div class="footer__legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
